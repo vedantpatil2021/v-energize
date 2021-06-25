@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+
+}
+
+
+.body--night-mode{
+
+  background-color: #112D32;
+  color: darken(white, 15%);
+}
+
+  
+.header__title{
+  
+  display: block;  
+}
+
+.tumbler__wrapper{
+
+  margin-left: auto;
+  width: 50px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  border: darken(#112D32, 40);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  
+}
+  svg{
+    width: 15px;
+    height: 15px;
+  }
+
+  
+.tumbler{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform .5s, background-color .5s;
+  will-change: transform;
+
+}
+
+.tumbler--night-mode{
+
+  transform: translateX(calc(100% - 2px));
+}  
+  
+.credits{
+
+  display: none;
+}
+  
+.sun-svg,
+.moon-svg{
+
+  display: none;
+}
+  
+.main{
+
+  width: 80vw;
+  max-width: 500px;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.post{
+
+  border-bottom: 1px dashed #222;
+  margin-bottom: 1.5rem;
+  transition: border-bottom  .5s;
+}
+
+.post--night-mode{
+
+  border-bottom: 1px dashed darken(white, 15%);
+}
+  
+.post__title{
+
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+  
+&:first-child{
+
+    margin-top: 0;
+}
+  
+.footer{
+
+  width: 80vw;
+  max-width: 500px;
+  padding: 1rem;
+  margin: 0 auto 1.5rem;
+}
+
+.description{
+
+  display: flex;
+}
+    
+.description__text{
+
+  margin-right: 0.25rem;
+}
