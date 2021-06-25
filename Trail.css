@@ -427,7 +427,7 @@ body
 
 #hero {
   /* background-color: linear-gradient(132deg, #7bc4d3,#112D32); */
-	background-image: url(/Images/284.png); 
+	background-image: url(Images/284.png); 
 	background-size: auto;
   background-repeat: no-repeat;
 	background-position: top center;
